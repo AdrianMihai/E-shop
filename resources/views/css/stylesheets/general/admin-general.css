@@ -1,0 +1,76 @@
+/*
+Error: Undefined mixin 'gradient'.
+        on line 4 of C:/xampp/htdocs/EShop/resources/views/css/sass/general/admin-general.scss, in `gradient'
+        from line 4 of C:/xampp/htdocs/EShop/resources/views/css/sass/general/admin-general.scss
+
+1: .add-button{
+2: 	position: relative;
+3: 	margin-bottom: 20px;
+4: 	@include gradient($button_color, $button_color_light);
+5: 	z-index: 12;
+6: 	span{
+7: 		margin-right: 6px;
+8: 	}
+9: }
+
+Backtrace:
+C:/xampp/htdocs/EShop/resources/views/css/sass/general/admin-general.scss:4:in `gradient'
+C:/xampp/htdocs/EShop/resources/views/css/sass/general/admin-general.scss:4
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:348:in `visit_mixin'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+org/jruby/RubyArray.java:2412:in `map'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+org/jruby/RubyArray.java:2412:in `map'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `visit_children'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `render'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+org/jruby/RubyMethod.java:128:in `call'
+file:/C:/Info Stuff/Compass 1.29/compass.app/compass-app.jar!/hook/compass_patch.rb:108:in `update_stylesheet'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+org/jruby/RubyArray.java:1613:in `each'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `watch'
+org/jruby/RubyProc.java:271:in `call'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/listener.rb:252:in `on_change'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/listener.rb:290:in `initialize_adapter'
+org/jruby/RubyProc.java:271:in `call'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Info Stuff/Compass 1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapter.rb:297:in `start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'gradient'.\A         on line 4 of C:/xampp/htdocs/EShop/resources/views/css/sass/general/admin-general.scss, in `gradient'\A         from line 4 of C:/xampp/htdocs/EShop/resources/views/css/sass/general/admin-general.scss\A \A 1: .add-button{\A 2: 	position: relative;\A 3: 	margin-bottom: 20px;\A 4: 	@include gradient($button_color, $button_color_light);\A 5: 	z-index: 12;\A 6: 	span{\A 7: 		margin-right: 6px;\A 8: 	}\A 9: }"; }

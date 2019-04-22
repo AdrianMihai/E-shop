@@ -1,0 +1,78 @@
+/*$button_color: #67217F;
+$button_color_light: #E28FFF;*/
+/* line 4, ../sass/product.scss */
+.productName {
+  line-height: 30px;
+}
+
+/* line 8, ../sass/product.scss */
+.productImage {
+  position: relative;
+  max-width: 300px;
+  width: auto;
+  margin-bottom: 15px;
+  text-align: center;
+  text-align: -webkit- center;
+}
+
+/* line 17, ../sass/product.scss */
+.quantity-control {
+  max-width: 117px !important;
+  margin: 15px 0px !important;
+  margin-top: 0px;
+}
+
+/* line 23, ../sass/product.scss */
+.old-price {
+  text-decoration: line-through;
+}
+
+/* line 27, ../sass/product.scss */
+.discounted-price {
+  margin-left: 10px;
+}
+
+/* line 31, ../sass/product.scss */
+.add-product {
+  margin-bottom: 15px;
+  background: #0D78A0;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(0deg, #0D78A0, #4392B0);
+  /* For Safari 5.1 to 6.0deg */
+  background: -o-linear-gradient(0deg, #0D78A0, #4392B0);
+  /* For Opera 11.1 to 12.0deg */
+  background: -moz-linear-gradient(0deg, #0D78A0, #4392B0);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg, #0D78A0, #4392B0);
+  /* Standard syntax */
+  color: #f0f0f0;
+  border: 1px solid #0D78A0;
+  border-radius: 4px;
+  font-family: "Muli", sans-serif;
+  transition: all .4s ease-out;
+}
+/* line 36, ../sass/mixins/mixins.scss */
+.add-product span:first-child {
+  color: #ff1e00;
+  vertical-align: text-top;
+  margin-right: 6px;
+}
+
+/* line 38, ../sass/product.scss */
+.review .content {
+  margin-left: 10px;
+  border-left: 2px solid #ED9B42;
+}
+/* line 42, ../sass/product.scss */
+.review .user {
+  color: #666;
+}
+/* line 46, ../sass/product.scss */
+.review .review-text {
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 50, ../sass/product.scss */
+.review hr {
+  border-width: 1px;
+}

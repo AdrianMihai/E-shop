@@ -1,0 +1,237 @@
+@import "variables/variables";
+@import "general/general";
+@import "mixins/mixins";
+
+body{
+	position: absolute;
+	background: $body_bg;
+}
+.logo{
+	margin:40px auto;
+	@include logo();
+
+	font-size:30px;
+}
+.login-form{
+	position: relative;
+	width:95%;
+	max-height: 10px;
+	max-width:350px;
+	top:-20px;
+	margin:0px auto;
+
+	border-radius: 4px;
+	background: #FFF;
+	border: 1px solid $light_grey;
+	box-shadow: 0px 1px 10px #666;
+
+	opacity: 0.25;
+	overflow: hidden;
+	.row:first-child{
+		font-family: $main_font;
+		@include text-align(center);
+		h3{
+			
+		}
+	}
+	hr{
+		margin:{
+			top:10px;
+			bottom: 15px;
+		}
+		border-top:1px solid $theme_color;
+	}
+	.warning-message{
+		//display: none;
+		margin-bottom: 0px;
+		max-height: 0px;
+		overflow: hidden;
+
+		font-family: $main_font;
+		color: $product_discounted_price;
+	}
+	.forgot-password{
+		padding:{
+			top:7px;
+			bottom: 7px;
+		}
+	}
+	.row:nth-child(4){
+		form{
+			margin-top: 15px;
+			.btn{
+				width:100%;
+				color: #FFF;
+				border:1px solid $button_color;
+				@include gradient($button_color, $button_color_light); 
+				transition: background 0.5s, color 0.5s ease-out;
+			}
+			.btn:active, .btn:focus{
+				outline: none;
+
+			}
+		}
+	}
+}
+.create-acc{
+	width:95%;
+	max-width: 350px;
+	margin: 20px auto;
+
+	box-shadow: 0px 1px 10px #666;
+}
+#signup-admin{
+	.modal-header{
+		
+	}
+	.modal-body{
+		span{
+			color: $button_color;
+		}
+		.alert{
+			display: none;
+		}
+	}
+	.signup-form{
+		display: none;
+		button{
+			width: 100%;
+
+			color:#FFF;
+			@include gradient($button_color, $button_color_light);
+			font-family: $main_font;
+			
+			transition: background .4s, color .4s ease-out;
+		}
+	}
+}
+
+nav{
+	margin-bottom: 0px;
+	.logo{
+		float:left;
+		margin:5px auto;
+		padding: 0px 10px;
+		height: auto;
+
+		@include logo();
+		font-size:30px;
+	}
+	.collapse{
+		margin:5px auto;
+		font-family: $main_font;
+		li{
+			margin-left:15px;
+		}
+		.employee-info{
+			button{
+				margin:0px auto;
+			}
+			img{
+				margin-right:6px;
+				max-width: 28px !important;
+				max-height: 28px;
+				width:28px;
+				height:28px;
+			}
+		}
+	}
+}
+.admin-content{
+	padding-top:53px;
+	.swipe-helper{
+		display: inline;
+		position:fixed;
+		top:53px;
+		left:0px;
+		height: 100%;
+		width:100px;
+
+		background:none;
+
+		cursor: pointer;
+		z-index: 10;
+	}
+	.sidebar{
+		position: fixed;
+		top:53px;
+		left:-400px;
+		height: 100%;
+
+		background:#333;
+		font-family: $main_font;
+
+		z-index:15;
+		.list-unstyled{
+			margin:20px auto;
+		}
+		a{
+			color:#FFF;
+		}
+		a:hover, a:active, a:link, a:visited{
+			text-decoration: none;
+		}		
+	}
+	.page-link{
+		padding:5px 0px;
+		width: calc(100% - 30px);
+		margin-bottom: 10px;
+
+		border-radius:3px;
+		
+		span:first-child{
+			top: 2px;
+			margin:0px 5px;
+		}
+		span:nth-child(2){
+			font-size: 14px;
+		}
+	}
+	.page-link:hover{
+		background: rgba(240, 240, 240, 0.25);
+	}
+	.active-link{
+		color:#333 !important;
+		background: #FFF;
+	}
+	.active-link:after{
+		position:absolute;
+		left: calc(100% - 47px);
+		right: 0px;
+		margin-top: -5px;
+		width:0;
+		height:0;
+
+		content: "  ";
+		border: 15px solid transparent;
+		border-left-color: #FFF;
+	}
+	.active-link:hover{
+		background: #fff;
+	}
+	.content-display{
+		height: 100%;
+		background: #FFF;
+		
+	}
+}
+
+@media screen and (min-width: 770px){
+	.login-form{
+		width: 60%;
+	}
+	
+}
+@media screen and (min-width: 992px){
+	.login-form{
+		width: 40%;
+	}
+	.admin-content .sidebar{
+		left:0;
+	}
+}
+@media screen and (min-width: 1170px){
+	.login-form{
+		width: 30%;
+	}
+}

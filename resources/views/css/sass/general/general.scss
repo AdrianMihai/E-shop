@@ -1,0 +1,245 @@
+@import "../variables/variables";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/fonts/icomoon.eot?2t9e7f');
+  src:  url('fonts/icomoon.eot?2t9e7f#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2t9e7f') format('truetype'),
+    url('fonts/icomoon.woff?2t9e7f') format('woff'),
+    url('fonts/icomoon.svg?2t9e7f#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,html{
+	width:100%;
+	height:100%;
+	
+}
+body{
+	background: $body_bg;
+}
+
+.btn:active, .btn:focus{
+	outline: none !important;
+}
+
+.product-image{
+	display: inline-block;
+
+	width:72px;
+	max-height: 72px;
+	margin-right:0px;
+
+  overflow-y: hidden;
+}
+
+/*scrollbar style */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background:$light_grey;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-button {
+	display:none;
+}
+::-webkit-scrollbar-corner {
+      display: none;
+}
+::-webkit-scrollbar-track {
+    width: 10px;
+    background:$light_grey;
+    border-radius: 4px;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border:1px solid $body_bg;
+    border-radius: 4px;
+    opacity: 0.25;
+} /* this will style the thumb, ignoring the track */
+
+//Style the notification panel (used when adding a product to the shopping cart for example)
+
+.notification-panel{
+  position: fixed;
+  right: calc(2.5% + 15px);
+  top: 72px;
+  height: 0px;
+
+  font:{
+    family: $secondary_font;
+    size: 11px;
+  }
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #FFF;
+
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+  z-index: 1029;
+
+  .notification-image{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+
+    border-radius: 4px;
+    border-right: 1px solid #ccc;
+    img{
+      border-radius: 4px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .text{
+    display: inline-block !important;
+    vertical-align: top;
+    padding: 5px;
+    p{
+      position: relative;
+      max-width: 200px;
+      margin-bottom: 5px;
+    }
+    p:first-child{
+      text-overflow: ellipsis;
+      white-space:nowrap;
+      overflow: hidden;
+      
+    }
+  }
+}
+.notification-panel.visible{
+  top: 77px;
+  height: 50px;
+
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+/*footer styling*/
+.footer{
+  position: absolute !important;
+  width: 100%;
+  top:100%;
+  padding: 15px 15px 70px 15px;
+
+  font-size: 12px;
+  color:#fff !important;
+  background: $button_color_dark;
+
+  a, a:link, a:visited, a:hover, a:active{
+    color:#fff;
+  }
+  
+  .row{
+    margin: 0px;
+    margin-top: 8px !important;
+  }
+  .row:first-child{
+    margin-top: 0px;
+  }
+}
+.footer.no-cart{
+  padding-bottom: 25px;
+}
+
+/*background colors */
+.bad{
+	background: $product_discounted_price;
+}
+.weak{
+	background: $theme_color;
+}
+.ok{
+	background: $warning_yellow;
+}
+.success{
+	background: $success;
+}
+
+/* text colors */
+.text-bad{
+	color: $product_discounted_price;
+}
+.text-weak{
+	color: $theme_color;
+}
+.text-ok{
+	color: $warning_yellow;
+}
+.text-success{
+	color: $success;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-external-hdd:before {
+  content: "\e900";
+}
+.icon-universal-serial-bus-flash-drive:before {
+  content: "\e901";
+}
+.icon-motherboard:before {
+  content: "\e902";
+}
+.icon-mouse:before {
+  content: "\e903";
+}
+.icon-speaker:before {
+  content: "\e904";
+}
+.icon-ram:before {
+  content: "\e905";
+}
+.icon-graphics-card:before {
+  content: "\e906";
+}
+.icon-computer-cpu:before {
+  content: "\e907";
+}
+.icon-hdd-card:before {
+  content: "\e908";
+}
+.icon-ssd-storage:before {
+  content: "\e909";
+}
+.icon-battery-charger:before {
+  content: "\e90a";
+}
+.icon-headphones:before {
+  content: "\e910";
+}
+.icon-keyboard:before {
+  content: "\e955";
+}
+.icon-display:before {
+  content: "\e956";
+}
+.icon-laptop:before {
+  content: "\e957";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-tablet:before {
+  content: "\e95a";
+}
+

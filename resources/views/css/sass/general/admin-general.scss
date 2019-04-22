@@ -1,0 +1,55 @@
+.add-button{
+	position: relative;
+	margin-bottom: 20px;
+	@include gradient($button_color, $button_color_light);
+	z-index: 12;
+	span{
+		margin-right: 6px;
+	}
+}
+
+.warnings{
+	position: fixed;
+	max-height: 0px;
+	top:5px;
+	right: 15px;
+		
+	font-family: $secondary_font;
+	font-size: 12px;
+
+	overflow: hidden;
+	opacity: 0;
+	z-index: 1051;
+}
+.infoMessages{
+	position: fixed;
+	right:5px;
+	top: 5px;
+	max-width: 250px;
+	min-width: 43px;
+	max-height: 0px;
+
+	border-radius: 4px;
+	font-family: $secondary_font;
+	font-size: 12px;
+
+	overflow: hidden;
+	opacity: 0.25;
+	z-index: 1051;
+	.col-xs-10 .row{
+		padding:{
+			top: 5px;
+			bottom: 5px;
+		}
+		margin: 5px auto;
+		.col-xs-12{
+			padding: 0px;
+		}
+	}
+	.col-xs-2{
+		position: relative;
+		height: 18px;
+		padding-right:0px;
+		margin-top: 17px;
+	}
+}

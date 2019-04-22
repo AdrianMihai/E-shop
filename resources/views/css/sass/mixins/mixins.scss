@@ -1,0 +1,44 @@
+@import "../variables/variables";
+
+@mixin text-align($alignment){
+	text-align: $alignment;
+	text-align: -webkit-$alignment;
+}
+@mixin transition($property, $timing, $type){
+	//transition: $property $timing $type;
+	//-webkit-transiton: ;
+}
+
+@mixin logo(){
+	color: $logo_color !important;
+	text-decoration: none;
+	font:{
+		family: $main_font;
+		size:42px;
+		weight: bold;
+		style: italic;
+	}		
+}
+@mixin gradient($color1, $color2){
+	background: $color1; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(0deg, $color1 , $color2); /* For Safari 5.1 to 6.0deg */
+  	background: -o-linear-gradient(0deg, $color1, $color2); /* For Opera 11.1 to 12.0deg */
+  	background: -moz-linear-gradient(0deg, $color1, $color2); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(0deg, $color1 , $color2); /* Standard syntax */
+}
+
+@mixin cartButton(){
+	@include gradient($button_color, $button_color_light);
+	color: $light_grey;
+	border: 1px solid $button_color;
+	border-radius: 4px;
+	font-family: $main_font;
+	span:first-child{
+	  	color:$product_discounted_price;
+		vertical-align: text-top;
+		margin:{
+			right:6px;
+			}
+	}
+	transition: all .4s ease-out;
+}

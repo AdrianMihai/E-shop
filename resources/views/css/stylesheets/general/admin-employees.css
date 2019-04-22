@@ -1,0 +1,186 @@
+/*$button_color: #67217F;
+$button_color_light: #E28FFF;*/
+/* line 1, ../../sass/general/admin-general.scss */
+.add-button {
+  position: relative;
+  margin-bottom: 20px;
+  background: #0D78A0;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(0deg, #0D78A0, #4392B0);
+  /* For Safari 5.1 to 6.0deg */
+  background: -o-linear-gradient(0deg, #0D78A0, #4392B0);
+  /* For Opera 11.1 to 12.0deg */
+  background: -moz-linear-gradient(0deg, #0D78A0, #4392B0);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg, #0D78A0, #4392B0);
+  /* Standard syntax */
+  z-index: 12;
+}
+/* line 6, ../../sass/general/admin-general.scss */
+.add-button span {
+  margin-right: 6px;
+}
+
+/* line 11, ../../sass/general/admin-general.scss */
+.warnings {
+  position: fixed;
+  max-height: 0px;
+  top: 5px;
+  right: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 1051;
+}
+
+/* line 24, ../../sass/general/admin-general.scss */
+.infoMessages {
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  max-width: 250px;
+  min-width: 43px;
+  max-height: 0px;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+  opacity: 0.25;
+  z-index: 1051;
+}
+/* line 39, ../../sass/general/admin-general.scss */
+.infoMessages .col-xs-10 .row {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 5px auto;
+}
+/* line 45, ../../sass/general/admin-general.scss */
+.infoMessages .col-xs-10 .row .col-xs-12 {
+  padding: 0px;
+}
+/* line 49, ../../sass/general/admin-general.scss */
+.infoMessages .col-xs-2 {
+  position: relative;
+  height: 18px;
+  padding-right: 0px;
+  margin-top: 17px;
+}
+
+/* line 6, ../../sass/general/admin-employees.scss */
+.content-display h2 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ED9B42;
+}
+/* line 10, ../../sass/general/admin-employees.scss */
+.content-display .searchText {
+  margin-bottom: 15px;
+}
+
+/* line 15, ../../sass/general/admin-employees.scss */
+.employee-data {
+  font-family: "Muli", sans-serif;
+}
+/* line 18, ../../sass/general/admin-employees.scss */
+.employee-data .panel-heading {
+  font-family: "Montserrat", sans-serif;
+}
+/* line 21, ../../sass/general/admin-employees.scss */
+.employee-data .panel-body {
+  overflow: auto;
+}
+/* line 24, ../../sass/general/admin-employees.scss */
+.employee-data .row {
+  margin-top: 15px;
+  min-width: 800px;
+}
+/* line 28, ../../sass/general/admin-employees.scss */
+.employee-data .row:first-child {
+  margin-top: 0px;
+}
+/* line 31, ../../sass/general/admin-employees.scss */
+.employee-data .user-options {
+  width: calc(8.33333333% - 15px);
+  padding-right: 0px;
+}
+/* line 34, ../../sass/general/admin-employees.scss */
+.employee-data .user-options span {
+  cursor: pointer;
+}
+/* line 39, ../../sass/general/admin-employees.scss */
+.employee-data .user-image {
+  max-width: 94px;
+}
+/* line 42, ../../sass/general/admin-employees.scss */
+.employee-data .user-email {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* line 48, ../../sass/general/admin-employees.scss */
+#modalForm {
+  font-family: "Muli", sans-serif;
+}
+/* line 52, ../../sass/general/admin-employees.scss */
+#modalForm .birthdate-picker .col-xs-4:first-child {
+  padding-right: 7.5px;
+}
+/* line 56, ../../sass/general/admin-employees.scss */
+#modalForm .birthdate-picker .col-xs-4:nth-child(2) {
+  padding: 0px 7px;
+}
+/* line 60, ../../sass/general/admin-employees.scss */
+#modalForm .birthdate-picker .col-xs-4:last-child {
+  padding-left: 7.5px;
+}
+/* line 64, ../../sass/general/admin-employees.scss */
+#modalForm .help-block {
+  max-height: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+/* line 70, ../../sass/general/admin-employees.scss */
+#modalForm .image-picker {
+  position: relative;
+  display: inline-block;
+  max-width: 200px;
+  max-height: 200px;
+  width: 200px !important;
+  height: 200px;
+  border: 4px solid #f0f0f0;
+}
+/* line 80, ../../sass/general/admin-employees.scss */
+#modalForm .image-picker span {
+  position: absolute;
+  padding: 8px;
+  top: calc(50% - 16px);
+  left: calc(50% - 16px);
+  color: #FFF;
+  background: #0D78A0;
+  border: 1px solid #0D78A0;
+  border-radius: 4px;
+  text-align: center;
+  text-align: -webkit- center;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+}
+/* line 96, ../../sass/general/admin-employees.scss */
+#modalForm .image-picker span:hover {
+  background: #4392B0;
+}
+/* line 99, ../../sass/general/admin-employees.scss */
+#modalForm .image-picker img {
+  position: relative;
+  margin: auto;
+  max-width: 196px;
+  max-height: 196px;
+}
+/* line 105, ../../sass/general/admin-employees.scss */
+#modalForm .image-picker .close {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 10;
+}

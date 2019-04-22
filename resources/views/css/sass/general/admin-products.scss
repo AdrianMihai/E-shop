@@ -1,0 +1,136 @@
+@import "variables/variables";
+@import "general/general";
+@import "mixins/mixins";
+@import "general/admin-general";
+
+#deleteConfirmation{
+	font-family: $secondary_font;
+}
+
+.content-display{
+	h3{
+		padding-left:10px;
+		border-left:2px solid $theme_color;
+		font-family: $main_font;
+	}
+	hr{
+		border-top:1px solid $theme_color;
+	}
+	.form-control{
+		margin-bottom:20px;
+	}
+	th{
+		cursor: pointer;
+	}
+	td{
+		overflow: auto;
+	}
+	tr{
+		position: relative;
+		.productSettings{
+			position: absolute;
+			//padding: 0px !important;
+			margin-top: 26px;
+			left: 16px;
+
+			background: transparent !important;
+			border: 0px !important;
+
+			opacity: 0.25;
+			transition: opacity .2s ease-in-out;
+			cursor: pointer;
+			z-index: 11;
+			span{
+				//padding: 8px;
+			}
+			.dropdown-menu{
+				position: static !important;
+				float: none !important;
+
+				transition: all .2s ease-in-out;
+			}
+		}
+		.productSettings:hover{
+			opacity: 1;
+		}
+	}
+	
+	.discounted-price, .quantity, .initial-price{
+		@include text-align(center);
+	}
+
+	.product-row.ng-move, .product-row.ng-enter{
+		opacity: 0.2;
+		transition: all .3s ease-in-out;
+	}
+	.product-row.ng-leave{
+		opacity: 1;
+		transition: all .3s ease-in-out;
+	}
+	.product-row.ng-move.ng-move-active,
+	.product-row.ng-enter.ng-enter-active{
+		opacity:1;
+	}
+	.product-row.ng-leave.ng-leave-active{
+		opacity:0;
+	}
+}
+.modal-dialog{
+	.alert{
+		display: none;
+	}
+	.image-picker{
+		position: relative;
+		display: inline-block;
+		max-width: 200px;
+		max-height: 200px;
+		width:200px !important;
+		height: 200px;
+
+		border: 2px dashed $button_color;
+		span{
+			position: absolute;
+			padding: 8px;
+			top: calc(50% - 16px);
+			left: calc(50% - 16px);
+
+			color: #FFF;
+			background: $button_color;
+			border:1px solid $button_color;
+			border-radius: 4px;
+			@include text-align(center);
+
+			transition: all .4s ease-in-out;
+			cursor: pointer;
+			z-index: 10;
+		}
+		span:hover{
+			background:  $button_color_light;
+		}
+		img{
+			position: relative;
+			margin: auto;
+			max-width:196px;
+			max-height: 196px;
+		}
+		.close{
+			display: none;
+			position:absolute;
+			top:5px;
+			right:5px;
+
+			z-index: 10;
+		}
+	}
+	.form-group:last-child{
+		margin-bottom:0px;
+	}
+	.help-block{
+		max-height: 0px;
+		margin:0px;
+		overflow: hidden;
+	}
+}
+#modal{
+	font-family: $main_font;
+}

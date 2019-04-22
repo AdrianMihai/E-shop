@@ -1,0 +1,114 @@
+@import "variables/variables";
+@import "mixins/mixins";
+@import "general/admin-general";
+
+.content-display{
+	h2{
+		padding-bottom: 5px;
+		border-bottom: 1px solid $theme_color;
+	}	
+	.searchText{
+		margin-bottom: 15px;
+	}
+}
+
+.employee-data{
+	font-family: $main_font;
+	
+	.panel-heading{
+		font-family: $secondary_font;
+	}
+	.panel-body{
+		overflow: auto;
+	}
+	.row{
+		margin-top: 15px;
+		min-width: 800px;
+	}
+	.row:first-child{
+		margin-top: 0px;
+	}
+	.user-options {
+		width: calc(8.33333333% - 15px);
+		padding-right: 0px;
+		span{
+			cursor: pointer;	
+		}
+		
+	}
+	.user-image{
+		max-width: 94px;
+	}
+	.user-email{
+		white-space: normal;
+		word-wrap: break-word;
+	}
+}
+
+#modalForm{
+	font-family: $main_font;
+
+	.birthdate-picker{
+		.col-xs-4:first-child{
+			padding-right: 7.5px;
+		}
+
+		.col-xs-4:nth-child(2){
+			padding: 0px 7px;
+		}
+
+		.col-xs-4:last-child{
+			padding-left: 7.5px;
+		}
+	}
+	.help-block{
+		max-height: 0px;
+		margin-bottom: 0px;
+
+		overflow: hidden;
+	}
+	.image-picker{
+		position: relative;
+		display: inline-block;
+		max-width: 200px;
+		max-height: 200px;
+		width:200px !important;
+		height: 200px;
+
+		border: 4px solid $light_grey;
+
+		span{
+			position: absolute;
+			padding: 8px;
+			top: calc(50% - 16px);
+			left: calc(50% - 16px);
+
+			color: #FFF;
+			background: $button_color;
+			border:1px solid $button_color;
+			border-radius: 4px;
+			@include text-align(center);
+
+			transition: all .4s ease-in-out;
+			cursor: pointer;
+			z-index: 10;
+		}
+		span:hover{
+			background:  $button_color_light;
+		}
+		img{
+			position: relative;
+			margin: auto;
+			max-width:196px;
+			max-height: 196px;
+		}
+		.close{
+			display: none;
+			position:absolute;
+			top:5px;
+			right:5px;
+
+			z-index: 10;
+		}
+	}
+}

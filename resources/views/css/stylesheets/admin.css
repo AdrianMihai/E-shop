@@ -1,0 +1,570 @@
+/*$button_color: #67217F;
+$button_color_light: #E28FFF;*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("/fonts/icomoon.eot?2t9e7f");
+  src: url("fonts/icomoon.eot?2t9e7f#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?2t9e7f") format("truetype"), url("fonts/icomoon.woff?2t9e7f") format("woff"), url("fonts/icomoon.svg?2t9e7f#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 14, ../sass/general/general.scss */
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 19, ../sass/general/general.scss */
+body {
+  background: #f8f8f8;
+}
+
+/* line 23, ../sass/general/general.scss */
+.btn:active, .btn:focus {
+  outline: none !important;
+}
+
+/* line 27, ../sass/general/general.scss */
+.product-image {
+  display: inline-block;
+  width: 72px;
+  max-height: 72px;
+  margin-right: 0px;
+  overflow-y: hidden;
+}
+
+/*scrollbar style */
+/* line 38, ../sass/general/general.scss */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+/* line 44, ../sass/general/general.scss */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* line 47, ../sass/general/general.scss */
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* line 50, ../sass/general/general.scss */
+::-webkit-scrollbar-track {
+  width: 10px;
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+/* the new scrollbar will have a flat appearance with the set background color */
+/* line 56, ../sass/general/general.scss */
+::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border: 1px solid #f8f8f8;
+  border-radius: 4px;
+  opacity: 0.25;
+}
+
+/* this will style the thumb, ignoring the track */
+/* line 65, ../sass/general/general.scss */
+.notification-panel {
+  position: fixed;
+  right: calc(2.5% + 15px);
+  top: 72px;
+  height: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #FFF;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+  z-index: 1029;
+}
+/* line 85, ../sass/general/general.scss */
+.notification-panel .notification-image {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  border-right: 1px solid #ccc;
+}
+/* line 92, ../sass/general/general.scss */
+.notification-panel .notification-image img {
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+}
+/* line 99, ../sass/general/general.scss */
+.notification-panel .text {
+  display: inline-block !important;
+  vertical-align: top;
+  padding: 5px;
+}
+/* line 103, ../sass/general/general.scss */
+.notification-panel .text p {
+  position: relative;
+  max-width: 200px;
+  margin-bottom: 5px;
+}
+/* line 108, ../sass/general/general.scss */
+.notification-panel .text p:first-child {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 116, ../sass/general/general.scss */
+.notification-panel.visible {
+  top: 77px;
+  height: 50px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+/*footer styling*/
+/* line 125, ../sass/general/general.scss */
+.footer {
+  position: absolute !important;
+  width: 100%;
+  top: 100%;
+  padding: 15px 15px 70px 15px;
+  font-size: 12px;
+  color: #fff !important;
+  background: #09526D;
+}
+/* line 135, ../sass/general/general.scss */
+.footer a, .footer a:link, .footer a:visited, .footer a:hover, .footer a:active {
+  color: #fff;
+}
+/* line 139, ../sass/general/general.scss */
+.footer .row {
+  margin: 0px;
+  margin-top: 8px !important;
+}
+/* line 143, ../sass/general/general.scss */
+.footer .row:first-child {
+  margin-top: 0px;
+}
+
+/* line 147, ../sass/general/general.scss */
+.footer.no-cart {
+  padding-bottom: 25px;
+}
+
+/*background colors */
+/* line 152, ../sass/general/general.scss */
+.bad {
+  background: #ff1e00;
+}
+
+/* line 155, ../sass/general/general.scss */
+.weak {
+  background: #ED9B42;
+}
+
+/* line 158, ../sass/general/general.scss */
+.ok {
+  background: #F7C638;
+}
+
+/* line 161, ../sass/general/general.scss */
+.success {
+  background: #48A14D;
+}
+
+/* text colors */
+/* line 166, ../sass/general/general.scss */
+.text-bad {
+  color: #ff1e00;
+}
+
+/* line 169, ../sass/general/general.scss */
+.text-weak {
+  color: #ED9B42;
+}
+
+/* line 172, ../sass/general/general.scss */
+.text-ok {
+  color: #F7C638;
+}
+
+/* line 175, ../sass/general/general.scss */
+.text-success {
+  color: #48A14D;
+}
+
+/* line 179, ../sass/general/general.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 194, ../sass/general/general.scss */
+.icon-external-hdd:before {
+  content: "\e900";
+}
+
+/* line 197, ../sass/general/general.scss */
+.icon-universal-serial-bus-flash-drive:before {
+  content: "\e901";
+}
+
+/* line 200, ../sass/general/general.scss */
+.icon-motherboard:before {
+  content: "\e902";
+}
+
+/* line 203, ../sass/general/general.scss */
+.icon-mouse:before {
+  content: "\e903";
+}
+
+/* line 206, ../sass/general/general.scss */
+.icon-speaker:before {
+  content: "\e904";
+}
+
+/* line 209, ../sass/general/general.scss */
+.icon-ram:before {
+  content: "\e905";
+}
+
+/* line 212, ../sass/general/general.scss */
+.icon-graphics-card:before {
+  content: "\e906";
+}
+
+/* line 215, ../sass/general/general.scss */
+.icon-computer-cpu:before {
+  content: "\e907";
+}
+
+/* line 218, ../sass/general/general.scss */
+.icon-hdd-card:before {
+  content: "\e908";
+}
+
+/* line 221, ../sass/general/general.scss */
+.icon-ssd-storage:before {
+  content: "\e909";
+}
+
+/* line 224, ../sass/general/general.scss */
+.icon-battery-charger:before {
+  content: "\e90a";
+}
+
+/* line 227, ../sass/general/general.scss */
+.icon-headphones:before {
+  content: "\e910";
+}
+
+/* line 230, ../sass/general/general.scss */
+.icon-keyboard:before {
+  content: "\e955";
+}
+
+/* line 233, ../sass/general/general.scss */
+.icon-display:before {
+  content: "\e956";
+}
+
+/* line 236, ../sass/general/general.scss */
+.icon-laptop:before {
+  content: "\e957";
+}
+
+/* line 239, ../sass/general/general.scss */
+.icon-mobile:before {
+  content: "\e958";
+}
+
+/* line 242, ../sass/general/general.scss */
+.icon-tablet:before {
+  content: "\e95a";
+}
+
+/* line 5, ../sass/admin.scss */
+body {
+  position: absolute;
+  background: #f8f8f8;
+}
+
+/* line 9, ../sass/admin.scss */
+.logo {
+  margin: 40px auto;
+  color: #D66F31 !important;
+  text-decoration: none;
+  font-family: "Muli", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+}
+
+/* line 15, ../sass/admin.scss */
+.login-form {
+  position: relative;
+  width: 95%;
+  max-height: 10px;
+  max-width: 350px;
+  top: -20px;
+  margin: 0px auto;
+  border-radius: 4px;
+  background: #FFF;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0px 1px 10px #666;
+  opacity: 0.25;
+  overflow: hidden;
+}
+/* line 30, ../sass/admin.scss */
+.login-form .row:first-child {
+  font-family: "Muli", sans-serif;
+  text-align: center;
+  text-align: -webkit- center;
+}
+/* line 37, ../sass/admin.scss */
+.login-form hr {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-top: 1px solid #ED9B42;
+}
+/* line 44, ../sass/admin.scss */
+.login-form .warning-message {
+  margin-bottom: 0px;
+  max-height: 0px;
+  overflow: hidden;
+  font-family: "Muli", sans-serif;
+  color: #ff1e00;
+}
+/* line 53, ../sass/admin.scss */
+.login-form .forgot-password {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+/* line 60, ../sass/admin.scss */
+.login-form .row:nth-child(4) form {
+  margin-top: 15px;
+}
+/* line 62, ../sass/admin.scss */
+.login-form .row:nth-child(4) form .btn {
+  width: 100%;
+  color: #FFF;
+  border: 1px solid #0D78A0;
+  background: #0D78A0;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(0deg, #0D78A0, #4392B0);
+  /* For Safari 5.1 to 6.0deg */
+  background: -o-linear-gradient(0deg, #0D78A0, #4392B0);
+  /* For Opera 11.1 to 12.0deg */
+  background: -moz-linear-gradient(0deg, #0D78A0, #4392B0);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg, #0D78A0, #4392B0);
+  /* Standard syntax */
+  transition: background 0.5s, color 0.5s ease-out;
+}
+/* line 69, ../sass/admin.scss */
+.login-form .row:nth-child(4) form .btn:active, .login-form .row:nth-child(4) form .btn:focus {
+  outline: none;
+}
+
+/* line 76, ../sass/admin.scss */
+.create-acc {
+  width: 95%;
+  max-width: 350px;
+  margin: 20px auto;
+  box-shadow: 0px 1px 10px #666;
+}
+
+/* line 88, ../sass/admin.scss */
+#signup-admin .modal-body span {
+  color: #0D78A0;
+}
+/* line 91, ../sass/admin.scss */
+#signup-admin .modal-body .alert {
+  display: none;
+}
+/* line 95, ../sass/admin.scss */
+#signup-admin .signup-form {
+  display: none;
+}
+/* line 97, ../sass/admin.scss */
+#signup-admin .signup-form button {
+  width: 100%;
+  color: #FFF;
+  background: #0D78A0;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(0deg, #0D78A0, #4392B0);
+  /* For Safari 5.1 to 6.0deg */
+  background: -o-linear-gradient(0deg, #0D78A0, #4392B0);
+  /* For Opera 11.1 to 12.0deg */
+  background: -moz-linear-gradient(0deg, #0D78A0, #4392B0);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg, #0D78A0, #4392B0);
+  /* Standard syntax */
+  font-family: "Muli", sans-serif;
+  transition: background .4s, color .4s ease-out;
+}
+
+/* line 109, ../sass/admin.scss */
+nav {
+  margin-bottom: 0px;
+}
+/* line 111, ../sass/admin.scss */
+nav .logo {
+  float: left;
+  margin: 5px auto;
+  padding: 0px 10px;
+  height: auto;
+  color: #D66F31 !important;
+  text-decoration: none;
+  font-family: "Muli", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+}
+/* line 120, ../sass/admin.scss */
+nav .collapse {
+  margin: 5px auto;
+  font-family: "Muli", sans-serif;
+}
+/* line 123, ../sass/admin.scss */
+nav .collapse li {
+  margin-left: 15px;
+}
+/* line 127, ../sass/admin.scss */
+nav .collapse .employee-info button {
+  margin: 0px auto;
+}
+/* line 130, ../sass/admin.scss */
+nav .collapse .employee-info img {
+  margin-right: 6px;
+  max-width: 28px !important;
+  max-height: 28px;
+  width: 28px;
+  height: 28px;
+}
+
+/* line 140, ../sass/admin.scss */
+.admin-content {
+  padding-top: 53px;
+}
+/* line 142, ../sass/admin.scss */
+.admin-content .swipe-helper {
+  display: inline;
+  position: fixed;
+  top: 53px;
+  left: 0px;
+  height: 100%;
+  width: 100px;
+  background: none;
+  cursor: pointer;
+  z-index: 10;
+}
+/* line 155, ../sass/admin.scss */
+.admin-content .sidebar {
+  position: fixed;
+  top: 53px;
+  left: -400px;
+  height: 100%;
+  background: #333;
+  font-family: "Muli", sans-serif;
+  z-index: 15;
+}
+/* line 165, ../sass/admin.scss */
+.admin-content .sidebar .list-unstyled {
+  margin: 20px auto;
+}
+/* line 168, ../sass/admin.scss */
+.admin-content .sidebar a {
+  color: #FFF;
+}
+/* line 171, ../sass/admin.scss */
+.admin-content .sidebar a:hover, .admin-content .sidebar a:active, .admin-content .sidebar a:link, .admin-content .sidebar a:visited {
+  text-decoration: none;
+}
+/* line 175, ../sass/admin.scss */
+.admin-content .page-link {
+  padding: 5px 0px;
+  width: calc(100% - 30px);
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+/* line 182, ../sass/admin.scss */
+.admin-content .page-link span:first-child {
+  top: 2px;
+  margin: 0px 5px;
+}
+/* line 186, ../sass/admin.scss */
+.admin-content .page-link span:nth-child(2) {
+  font-size: 14px;
+}
+/* line 190, ../sass/admin.scss */
+.admin-content .page-link:hover {
+  background: rgba(240, 240, 240, 0.25);
+}
+/* line 193, ../sass/admin.scss */
+.admin-content .active-link {
+  color: #333 !important;
+  background: #FFF;
+}
+/* line 197, ../sass/admin.scss */
+.admin-content .active-link:after {
+  position: absolute;
+  left: calc(100% - 47px);
+  right: 0px;
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  content: "  ";
+  border: 15px solid transparent;
+  border-left-color: #FFF;
+}
+/* line 209, ../sass/admin.scss */
+.admin-content .active-link:hover {
+  background: #fff;
+}
+/* line 212, ../sass/admin.scss */
+.admin-content .content-display {
+  height: 100%;
+  background: #FFF;
+}
+
+@media screen and (min-width: 770px) {
+  /* line 220, ../sass/admin.scss */
+  .login-form {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 226, ../sass/admin.scss */
+  .login-form {
+    width: 40%;
+  }
+
+  /* line 229, ../sass/admin.scss */
+  .admin-content .sidebar {
+    left: 0;
+  }
+}
+@media screen and (min-width: 1170px) {
+  /* line 234, ../sass/admin.scss */
+  .login-form {
+    width: 30%;
+  }
+}
